@@ -17,3 +17,5 @@
 /web/bundles/
 /web/css-plain/
 /web/css/
+.idea
+.sass-cache
