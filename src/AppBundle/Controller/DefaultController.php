@@ -22,12 +22,11 @@ class DefaultController extends Controller
         $product = $this->getDoctrine()->getRepository(Product::class)
           ->find(1);
 
-        var_dump($product->getCategory()->getName());
-
         // replace this example code with whatever you need
         return $this->render('@App/default/index.html.twig', [
             'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
-            'guzzle_conf' => $this->guzzle->getConfig()
+            'guzzle_conf' => $this->guzzle->getConfig(),
+            'product' => $product
         ]);
     }
 }

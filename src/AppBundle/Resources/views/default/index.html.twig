@@ -11,6 +11,9 @@
             Left hand rail
         </div>
         <div class="col-9">
+            {% if product is not empty %}
+                {{ dump (product) }}
+            {% endif %}
             {{ dump(guzzle_conf) }}
         </div>
     </div>
